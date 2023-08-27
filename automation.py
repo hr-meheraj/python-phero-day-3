@@ -4,8 +4,8 @@
 # ✅ Check a number is a prime number or not
 # ✅ Sum of all digits in a number
 # ✅ Reverse a string (Check palindrome)
-# // Calculate age
-# // Build a simple calculator
+# ✅ Calculate age
+# ✅ Build a simple calculator
 
 
 # Covert Mile to Kilometer
@@ -96,3 +96,39 @@
     #     print("Your age is {}".format(yourAge))
 
     # calculateAge() 
+
+
+
+
+
+# # // Build a simple calculator
+# import re
+
+# def calculate(expression):
+#     try:
+#         # Remove spaces from the expression
+#         expression = expression.replace(" ", "")
+        
+#         # Use regular expressions to find and evaluate expressions within parentheses
+#         while '(' in expression:
+#             # Find the innermost parentheses expression
+#             inner_expr = re.search(r'\(([^()]+)\)', expression).group(1)
+            
+#             # Calculate the value of the inner expression
+#             inner_result = eval(inner_expr)
+            
+#             # Replace the inner expression with its result
+#             expression = expression.replace(f'({inner_expr})', str(inner_result))
+        
+#         # Evaluate the remaining expression
+#         result = eval(expression)
+#         return result
+#     except Exception as e:
+#         return f"Error: {e}"
+
+# # Get user input
+# user_input = input("Enter an expression: ")
+
+# # Calculate and display the result
+# result = calculate(user_input)
+# print("Result:", result)
