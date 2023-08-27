@@ -1,6 +1,6 @@
 # ✅ Convert miles to kilometers
 # ✅ Calculate simple interest
-# // Find the largest number in a list
+# ✅ Find the largest number in a list
 # // Check a number is a prime number or not
 # // Sum of all digits in a number
 # // Reverse a string (Check palindrome)
@@ -25,3 +25,17 @@
     #     print("Your interest is {}".format(interest))
 
     # simpleInterest()
+
+
+
+# // Find the largest number in a list
+    # def findLargetestNumber(*args):
+    #     numbersList = []
+    #     for x in args:
+    #         numbersList.append(x)
+
+    #     largetNumberFromList = max(numbersList)   
+        
+    #     print(numbersList, "Where most laret number is {}".format(largetNumberFromList))
+
+    # findLargetestNumber(2,4,6)
