@@ -39,3 +39,23 @@
     #     print(numbersList, "Where most laret number is {}".format(largetNumberFromList))
 
     # findLargetestNumber(2,4,6)
+
+
+# // Check a number is a prime number or not
+def primeNumberCheck():
+    number = int(input("Please enter a number to check if it's a prime number: "))
+    if number <= 2: 
+        print("Please input a number above 2")
+    else: 
+        is_prime = True  # Assume the number is prime initially
+        for x in range(2, int(number**0.5) + 1):
+            if number % x == 0:
+                is_prime = False
+                break
+        
+        if is_prime:
+            print("Yes, it's a Prime Number")
+        else:
+            print("No, it's not a Prime Number")
+
+primeNumberCheck()
